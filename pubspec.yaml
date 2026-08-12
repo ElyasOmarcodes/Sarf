@@ -1,0 +1,32 @@
+name: tasrif
+description: "تصريف — د علم صرف د بابونو د اعلال جوړونکی"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+  # Amiri (SIL OFL 1.1) is bundled rather than taken from the system because
+  # the whole app is fully-vocalised Arabic: Windows' default UI fonts drop or
+  # mis-place harakat, and ضَرَبَ vs ضُرِبَ is the entire point of the app.
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
