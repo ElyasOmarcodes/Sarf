@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FocusApp</string>
+    <string name="accessibility_service_description">Monitors and blocks distracting social media apps to help you focus.</string>
+</resources>
